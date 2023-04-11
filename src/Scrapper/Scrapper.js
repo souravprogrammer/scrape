@@ -19,6 +19,7 @@ class Scrapper {
       duration: $("header div.entry-meta span.duration").text(),
       rating: $("header div.entry-meta span.rating span").text(),
       image: $("div.post-thumbnail img").attr("data-lazy-src"),
+      airedOn: $("span.date").text(),
     };
     return anime;
   }
